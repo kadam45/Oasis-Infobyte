@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sugar</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <style>
+    .navbar {
+      padding: 0;
+    }
+
+    .icons i {
+      padding: 10px;
+    }
+
+    li {
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+
+    .bestsellers,
+    .hot-deals-heading {
+      color: white;
+      font-size: 24px;
+      font-weight: 700;
+      padding: 50px 10px 30px 10px;
+    }
+
+    .container-fluid {
+      background-color: #282828;
+    }
+
+    .box {
+      padding: 0 150px 150px 150px;
+    }
+
+    .card {
+      border-radius: 15px;
+    }
+
+    .card1,
+    .card4 {
+      padding: 2px 40px;
+    }
+
+    .card2,
+    .card3 {
+      padding: 40px;
+    }
+
+    .card img {
+      border-radius: 10px;
+    }
+
+    .price {
+      padding: 2px 20px;
+      align-items: center;
+    }
+
+    .price>p:nth-child(1) {
+      font-size: small;
+      color: gray;
+    }
+
+    .price>p:nth-child(2),
+    .amt {
+      font-size: large;
+      font-weight: 800;
+    }
+
+    .price>p:nth-child(3) {
+      font-size: medium;
+      font-weight: 600;
+      color: #fc2b79;
+    }
+
+    .gray {
+      color: rgb(96, 96, 96);
+    }
+
+    .card-btn {
+      padding: 10px;
+    }
+
+    .heart-icon {
+      border: 3px solid;
+      padding: 10px;
+      border-radius: 15px;
+    }
+
+    .btn {
+      background-color: black;
+      color: white;
+      font-size: medium;
+      width: 180px;
+    }
+
+    hr {
+      color: #fc2b79;
+      width: 50px;
+      margin: 10px;
+      border: 2px solid #fc2b79;
+    }
+
+    .carousel {
+      height: 450px;
+      background-color: #efeeef;
+    }
+
+    .deals {
+      margin-bottom: 100px;
+    }
+
+    .deals img {
+      width: 450px;
+      height: 300px;
+      border-radius: 10px;
+    }
+    .notification{
+      background-color: #debe84;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="notification" style="text-align: center; padding: 10px;">
+    Use Code: FIRST20 to get 20% OFF on your first order!
+  </div>
+  
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid" style="background-color: black;">
+      <img src="logo.png" alt="">
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Try Liquid Lipstick" aria-label="Search" style="width: 600px; background-color: #282828;">
+        <button class="btn" type="submit" style="background-color: white; color:black; width: auto; margin-left: -10px;">
+          <i class="fa-solid fa-magnifying-glass"></i> Search</button>
+      </form>
+      <p style="margin-top: 15px;">
+        <i class="fa-solid fa-circle-user" style="color: #ffffff;"></i>
+        <span style="color: white;">Login/Register</span>
+      </p>
+      <div class="icons">
+        <i class="fa-regular fa-heart" style="color: #ffffff;"></i>
+        <i class="fa-solid fa-bag-shopping" style="color: #ffffff;"></i>
+        <i class="fa-solid fa-percent" style="color: #ffffff;"></i>
+      </div>
+    </div>
+  </nav>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid" style="height: 60px;">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">LIPS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">EYES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">FACE</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">NAILS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">SKINCARE</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">ACCESSORIES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">GIFT & KITS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">BESTSELLERS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">NEW LAUNCHES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">OFFERS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">BLOG</a>
+        </li>
+    </div>
+  </nav>
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img
+          src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fd32baadbbpueqt.cloudfront.net%2FHomepage%2F0957a373-9301-44e5-8153-5dd3df6eb591.jpg&w=1920&q=75"
+          class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img
+          src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fd32baadbbpueqt.cloudfront.net%2FHomepage%2F0bc72fd9-b6d7-431d-b60b-a0c950460bab.gif&w=1920&q=75"
+          class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img
+          src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fd32baadbbpueqt.cloudfront.net%2FHomepage%2Ff724f538-e895-4ac6-a4cd-4879e839fd2e.gif&w=1920&q=75"
+          class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <div class="container-fluid" style="text-align: center;">
+    <div class="d-flex align-items-center justify-content-center">
+      <hr>
+      <p class="bestsellers">BESTSELLERS</p>
+      <hr>
+    </div>
+    <div class="box d-flex justify-content-around">
+      <div class="card" style="width: 17rem;">
+        <div class="card1">
+          <img
+            src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Ffiles%2Fa_00b52826-78d8-4da0-aba1-fbcbfb39dc33.jpg%3Fv%3D1688228539&w=256&q=75"
+            class="card-img-top" alt="...">
+        </div>
+        <div class="card-body">
+          <p class="card-title">LA LA LOVE 18HR Liquid <br> Lipstick - Set of 3</p>
+          <div class="price d-flex justify-content-around">
+            <p><i class="fa-solid fa-indian-rupee-sign fa-sm"></i><s>1197</s></p>
+            <p><i class="fa-solid fa-indian-rupee-sign fa-sm"></i>899</p>
+            <p>(25% Off)</p>
+          </div>
+        </div>
+        <div class="card-btn d-flex justify-content-around">
+          <div class="heart-icon">
+            <i class="fa-regular fa-heart fa-xl"></i>
+          </div>
+          <button type="button" class="btn">CHOOSE ITEMS</button>
+        </div>
+      </div>
+      <div class="card" style="width: 17rem;">
+        <div class="card2">
+          <img
+            src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Ffiles%2Fparent1stcard_1_7aa4b700-2b5f-4212-8b56-86889ab8a390.jpg%3Fv%3D1689262362&w=256&q=75"
+            class="card-img-top" alt="...">
+        </div>
+        <div class="card-body">
+          <p class="card-title">Matte As Hell Crayon <br> Lipstick
+          </p>
+          <p class="gray" style="margin: 2px;"><i class="fa-solid fa-circle fa-xs" style="color: #fc2b79;"></i> 33
+            shades</p>
+          <div class="price d-flex justify-content-around">
+            <p><i class="fa-solid fa-indian-rupee-sign fa-sm"></i><s>849</s></p>
+            <p><i class="fa-solid fa-indian-rupee-sign fa-sm"></i>739</p>
+            <p>(13% Off)</p>
+          </div>
+        </div>
+        <div class="card-btn d-flex justify-content-around">
+          <div class="heart-icon">
+            <i class="fa-regular fa-heart fa-xl"></i>
+          </div>
+          <button type="button" class="btn btn-lg">SELECT SHADE</button>
+        </div>
+      </div>
+      <div class="card" style="width: 17rem;">
+        <div class="card2">
+          <img
+            src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2FBaseOfGloryPoreMinimizingPrimerPDPimages1copy.jpg%3Fv%3D1682956017&w=256&q=75"
+            class="card-img-top" alt="...">
+        </div>
+        <div class="card-body">
+          <p class="card-title">Base Of Glory Pore <br> Minimizing Primer </p>
+          <div class="price d-flex justify-content-around">
+            <p><i class="fa-solid fa-indian-rupee-sign fa-sm"></i><s>799</s></p>
+            <p><i class="fa-solid fa-indian-rupee-sign fa-sm"></i>672</p>
+            <p>(16% Off)</p>
+          </div>
+        </div>
+        <div class="card-btn d-flex justify-content-around">
+          <div class="heart-icon">
+            <i class="fa-regular fa-heart fa-xl"></i>
+          </div>
+          <button type="button" class="btn btn-lg">ADD TO BAG</button>
+        </div>
+      </div>
+      <div class="card" style="width: 17rem;">
+        <div class="card1">
+          <img
+            src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F1_2d186f9b-9024-4e23-a0d2-a55b7671e89c.jpg%3Fv%3D1657123108&w=256&q=75"
+            class="card-img-top" alt="...">
+        </div>
+        <div class="card-body">
+          <p class="card-title">Contour De Force Eyes br And Face Palette</p>
+          <p class="gray" style="margin: 2px;"><i class="fa-solid fa-circle fa-xs" style="color: #fc2b79;"></i> 3 shades
+          </p>
+          <p class="amt"><i class="fa-solid fa-indian-rupee-sign fa-sm"></i>899</p>
+        </div>
+        <div class="card-btn d-flex justify-content-around">
+          <div class="heart-icon">
+            <i class="fa-regular fa-heart fa-xl"></i>
+          </div>
+          <button type="button" class="btn btn-lg">SELECT SHADE</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hot-deals">
+    <div class="d-flex align-items-center justify-content-center">
+      <hr>
+      <p class="hot-deals-heading" style="color: black;">HOT DEALS</p>
+      <hr>
+    </div>
+    <div class="deals d-flex align-items-center justify-content-evenly">
+      <img
+        src="https://in.sugarcosmetics.com/_next/image?url=https://d32baadbbpueqt.cloudfront.net/Homepage/c7f8f9c4-2508-482d-bcc4-6dd30de4c6a6.jpg&w=1920&q=75"
+        alt="">
+      <img src="https://d32baadbbpueqt.cloudfront.net/Homepage/9b92bb73-edd9-4b40-84be-c0a3f9c32d7c.gif" alt="">
+      <img
+        src="https://in.sugarcosmetics.com/_next/image?url=https://d32baadbbpueqt.cloudfront.net/Homepage/a376e8d4-5e02-4dfb-b649-3dc4807499c5.jpg&w=1920&q=75"
+        alt="">
+    </div>
+  </div>
+
+  <script src="https://kit.fontawesome.com/a88c1550a0.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
