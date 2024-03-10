@@ -8,6 +8,11 @@ IMAGE:
 
 
 
+![image](https://github.com/kadam45/CodSoft/assets/153412193/23d49c05-f2e6-4f00-ae10-5ac53220db1d)
+
+
+
+
                              LANDING PAGE:
 RESULT/OUTPUT: [Click here for landing Page Demo Link](https://joyful-cajeta-c2e9a7.netlify.app/)
 
