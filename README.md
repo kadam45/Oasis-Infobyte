@@ -28,7 +28,7 @@ IMAGE:
 
 
 
-                            Hii TEMPERATURE CONVERTER
+                             TEMPERATURE CONVERTER
                              
                             
 
